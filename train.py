@@ -22,7 +22,7 @@ data, embedding = load_data(
     "data/raw/compiled_data_no_neutral.parquet", "data/raw/embeddings.npy"
 )
 
-data_loader = get_data_loader(data, embedding, 8, 24)
+data_loader = get_data_loader(data, embedding, 102400, 24)
 
 LOGGER.info(f"Data Loader Length: {len(data_loader)}")
 

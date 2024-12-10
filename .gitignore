@@ -162,7 +162,9 @@ cython_debug/
 #.idea/
 
 .DS_Store
-*data/
+# *data/
+data/*.npy
+data/*.parquet
 *.sh
 *.out
 
@@ -175,3 +177,8 @@ bert-*/*
 *_working_data/
 
 *_figs/
+
+data/raw
+data/temp
+data/test.ipynb
+runs
